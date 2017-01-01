@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+　　<title>とりあえず勉強中</title>
+　　<link href="style.css" rel="stylesheet" type="text/css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href="css/mawbutton.css"/ rel='stylesheet'>
+</head>
+<header>
+<div class="header-contents">
+<h1>むずい！！！</h1>
+</div>
+</header>
+
+<body>
+
+    <button>Click Me</button>
+    <button class="green">fuck Me</button>
+    <button class="blue">bite Me</button>
+    <button class="red">give Me</button>
+
+	<script type="text/javascript" src="js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="js/mawbutton.js"></script>
+    <script type="text/javascript">
+        $('button').mawbutton({
+            speed : 300,
+            scale : 6,
+            effect : "ripple",
+            transitionEnd:function(){
+                console.log('end');
+            }
+        });
+    </script>
+</body>
+
+<body>
+<section>
+	<script type="text/javascript" src="OpenLayers.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+
+		window.alert('OSM')
+
+　　<!--
+
+　　　　function init() {
+
+　　　　　　var map = new OpenLayers.Map("OSM_disp");
+　　　　　　var maplayer = new OpenLayers.Layer.OSM();
+　　　　　　map.addLayer(maplayer);
+
+　　　　　　var lonLat = new OpenLayers.LonLat(139.766084, 35.681382)
+　　　　　　　　.transform(
+　　　　　　　　　　new OpenLayers.Projection("EPSG:4326"),
+　　　　　　　　　　new OpenLayers.Projection("EPSG:900913")
+　　　　　　　　);
+　　　　　　map.setCenter(lonLat, 15);
+　　　　}
+　　// -->
+	</script>
+</section>
+</body>
+
+	<body onload="init();">
+	<div id="OSM_disp" style="width:900px; height:500px",align="center"></div>
+</body>
+
+</html>
